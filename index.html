@@ -9,6 +9,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title> Avant &#8211; Horizon </title>
     <meta name='robots' content='max-image-preview:large' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel="stylesheet" href="axos.css" />
     <script type="text/javascript" src="axos.js"></script>
@@ -13978,11 +13981,16 @@
                                             &nbsp; +91 87456 12459</i>
                                     </a>
                                     <div class="btButtonWidget  btWithLink"  style="">
-                                        <a href="" target="_self" class="btButtonWidgetLink">
-                                            <div class="btButtonWidgetContent"><span class="btButtonWidgetText">Download
-                                                   E-brochure</span></div>
-                                        </a>
+                                        
+                                            <div class="btButtonWidgetContent">
+                                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="background-image: -webkit-linear-gradient(
+                                                    315deg, #c39f75 0%, rgba(195, 159, 117, 0.95) 25%, #a47947 50%, #c39f75 75%, #8b673d 100%);border: none;outline: none;">Download
+                                                   E-brochure</button></div>
+                                    
                                     </div>
+
+                                    
+                                   
                                     <!-- <div class="btButtonWidget  btWithLink">
                                         <a href="" target="_self" class="btButtonWidgetLink">
                                             <div class="btButtonWidgetContent"><span class="btButtonWidgetText">Download
@@ -14192,8 +14200,77 @@
                             </div>
                         </section>
 
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Download E-Brochure</h4>
+                                </div>
+                                <div class="modal-body">
+                                <form style="padding: 20px;">
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Email address</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-group form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                  </form>
+                                  </div>
 
+                                <!-- <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div> -->
+                              </div>
+                              
+                            </div>
+                          </div>
 
+                          <div class="modal fade" id="myVR" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Sign up to view VR</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form style="padding: 20px;">
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Password</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-group form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                                      </form>
+                                </div>
+                                
+                                <!-- <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div> -->
+                              </div>
+                              
+                            </div>
+                          </div>
 
 
 
@@ -14829,7 +14906,7 @@
                                                                
 
 
-                                                             <div class="bt_bb_row_inner bt_bb_hidden_xs bt_bb_hidden_ms bt_bb_hidden_sm" -->
+                                                             <div class="bt_bb_row_inner bt_bb_hidden_xs bt_bb_hidden_ms bt_bb_hidden_sm"
                                                                 style="z-index: 3; position: relative; margin-top: 4em;">
                                                                 <div class="bt_bb_column_inner col-xl-12 bt_bb_align_left bt_bb_vertical_align_top bt_bb_padding_normal bt_bb_animation_fade_in animate"
                                                                     style="transition-delay: 1200ms;" data-width="12"
@@ -15950,9 +16027,10 @@
                                                         bt_bb_shape_inherit bt_bb_align_inherit"
                                                  data-bt-override-class="{}" style="padding-top: 50px;"
                                                  >
-                                                 <a href="#" 
-                                                 target="_self" class="bt_bb_link" title="Download Brochure">
-                                                 <span class="bt_bb_button_text">Sign Up</span></a></div>
+                                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myVR" style="background-image: -webkit-linear-gradient(
+                                                    315deg, #c39f75 0%, rgba(195, 159, 117, 0.95) 25%, #a47947 50%, #c39f75 75%, #8b673d 100%);border: none;outline: none;">Sign
+                                                    Up</button>
+                                                </div>
                                                     </div>
                                                             <div
                                                                 class="bt_bb_separator bt_bb_bottom_spacing_medium bt_bb_border_style_none">
@@ -16141,9 +16219,10 @@
                                                         bt_bb_shape_inherit bt_bb_align_inherit"
                                                  data-bt-override-class="{}"
                                                  >
-                                                 <a href="#" 
-                                                 target="_self" class="bt_bb_link" title="Download Brochure">
-                                                 <span class="bt_bb_button_text">Sign Up</span></a></div>
+                                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myVR" style="background-image: -webkit-linear-gradient(
+                                                    315deg, #c39f75 0%, rgba(195, 159, 117, 0.95) 25%, #a47947 50%, #c39f75 75%, #8b673d 100%);border: none;outline: none;">Sign
+                                                    Up</button>
+                                                    </div>
                                                     </div>
                                                     <div
                                                         class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none">
