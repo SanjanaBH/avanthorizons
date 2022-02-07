@@ -25,6 +25,5 @@ function myFunction1(imgs) {
 }
 
 
-
-/////
+//
 
